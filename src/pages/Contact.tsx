@@ -1,3 +1,4 @@
+import "./Contact.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 
 const Contact = () => {
@@ -21,7 +22,7 @@ const Contact = () => {
   return (
     <main className="contact">
       <h1>Contactez-nous</h1>
-      <div className="contact__info">
+      <div className="contact-info">
         <p>
           Téléphone : <a href="tel:+123456789">+1 234 567 89</a>
         </p>
@@ -30,7 +31,7 @@ const Contact = () => {
         </p>
         <p>Adresse : 123 Rue Exemple, Ville, Pays</p>
       </div>
-      <form className="contact__form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label>
           Nom :
           <input

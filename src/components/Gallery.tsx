@@ -1,23 +1,12 @@
-const Gallery = () => {
-  const images = [
-    "/images/galerie1.jpg",
-    "/images/galerie2.jpg",
-    "/images/galerie3.jpg",
-    "/images/galerie4.jpg",
-    "/images/galerie5.jpg",
-    "/images/galerie6.jpg",
-    "/images/galerie7.jpg",
-    "/images/galerie8.jpg",
-    "/images/galerie9.jpg",
-    "/images/galerie10.jpg",
-    // Add more images here
-  ];
+import "./Gallery.css";
+import IMAGES from "../data/images";
 
+const Gallery = () => {
   return (
     <div className="gallery">
-      {images.map((src, index) => (
-        <div key={index} className="gallery__item">
-          <img src={src} alt={`Artwork ${index + 1}`} loading="lazy" />
+      {IMAGES.map(({ src, id }) => (
+        <div key={id} className="gallery-item">
+          <img src={src} alt={`Artwork ${id + 1}`} loading="lazy" />
         </div>
       ))}
     </div>

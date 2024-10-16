@@ -1,6 +1,5 @@
 /* globals.css */
 
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +22,7 @@ a {
 
 a:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 button {
@@ -37,141 +37,6 @@ button:hover {
   background-color: rgba(52, 73, 94, 0.4);
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  background-color: #fff;
-  color: #000;
-}
-
-.navbar__links {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  position: sticky;
-  top: 0;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 8px;
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-
-/* Home Page */
-.home__intro {
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Contact Page */
-.contact__info {
-  padding: 2rem;
-}
-
-.contact__form {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact__form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-.contact__form input,
-.contact__form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Gallery Page */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.gallery__item {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.gallery__item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  border-radius: 8px;
-}
-
-.gallery__item img:hover {
-  transform: scale(1.05); /* Zoom léger au survol */
-}
-
-/* ImageRow */
-.image-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 30vh;
-}
-
-.image-row img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* Responsive Design */
-@media (max-width: 1150px) {
-  .image-row {
-    height: 25vh;
-  }
-}
-
-@media (max-width: 975px) {
-  .image-row {
-    height: 20vh;
-  }
-}
-
 @media (max-width: 768px) {
-  .navbar {
-    justify-content: center;
-  }
-  .navbar__logo {
-    display: none;
-  }
-
-  .image-row {
-    height: 30vh;
-    width: 70%;
-    flex-direction: column;
-    overflow: scroll;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 0 auto;
-  }
-
-  .image-row img {
-    height: 20vh;
-    box-shadow: none;
-  }
 }
