@@ -1,3 +1,38 @@
 .home-description {
-  padding: 32px;
+  top: 0;
+  z-index: 1;
+  padding: 64px;
+  font-size: 18px;
+  background-color: #e6e6fa;
+}
+
+.home-content {
+  width: 50%;
+}
+.home-content p:last-child {
+  margin-bottom: 32px;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+}
+
+.home-first {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .home-description {
+    padding: 32px;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-content p:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -21,12 +21,23 @@
 }
 
 .gallery-item img:hover {
-  transform: scale(1.05); /* Zoom léger au survol */
+  transform: scale(1.2);
+}
+
+.gallery-item-fullscreen img {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
   .gallery {
     justify-content: center;
     padding-inline: 16px;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.1);
   }
 }
