@@ -14,9 +14,17 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // TODO: use real mail address and delete yopmail adress
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+
+    const mailtoLink = `mailto:painter-site@yopmail.com?subject=Message de ${
+      formData.nom
+    }&body=Nom: ${formData.nom}%0AEmail: ${
+      formData.email
+    }%0AMessage: ${encodeURIComponent(formData.message)}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -25,10 +33,12 @@ const Contact = () => {
       <div className="contact-info contact-wrapper">
         <div className="contact-one">
           <p>
-            <a href="mailto:contact@painter.com">contact@painter.com</a>
+            <a href="mailto:painter-site@yopmail.com">
+              painter-site@yopmail.com
+            </a>
           </p>
           <p>
-            <a href="tel:+123456789">07 07 07 07 07</a>
+            <a href="tel:+33707070707">07 07 07 07 07</a>
           </p>
           <span>8h - 18h</span>
         </div>
