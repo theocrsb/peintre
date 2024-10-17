@@ -22,14 +22,23 @@ const Contact = () => {
   return (
     <main className="contact">
       <h1>Contactez-nous</h1>
-      <div className="contact-info">
-        <p>
-          Téléphone : <a href="tel:+123456789">+1 234 567 89</a>
-        </p>
-        <p>
-          Email : <a href="mailto:contact@peintre.com">contact@peintre.com</a>
-        </p>
-        <p>Adresse : 123 Rue Exemple, Ville, Pays</p>
+      <div className="contact-info contact-wrapper">
+        <div className="contact-one">
+          <p>
+            <a href="mailto:contact@painter.com">contact@painter.com</a>
+          </p>
+          <p>
+            <a href="tel:+123456789">07 07 07 07 07</a>
+          </p>
+          <span>8h - 18h</span>
+        </div>
+        <div className="contact-two">
+          <span>123 Rue Exemple</span>
+          <br />
+          <span>Paris et alentours</span>
+          <br />
+          <span>France</span>
+        </div>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label>
@@ -61,7 +70,9 @@ const Contact = () => {
             required
           ></textarea>
         </label>
-        <button type="submit">Envoyer</button>
+        <button className="contact-button" type="submit">
+          Envoyer
+        </button>
       </form>
     </main>
   );

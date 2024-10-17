@@ -17,7 +17,7 @@ html {
 a {
   text-decoration: none;
   color: #75574b;
-  margin: 1rem;
+  margin: 16px;
 }
 
 a:hover {
@@ -26,17 +26,27 @@ a:hover {
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border: 1px solid #fff;
   background-color: #c2c2c200;
   color: #fff;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 button:hover {
   background-color: rgba(52, 73, 94, 0.4);
 }
 
+h1 {
+  padding: 32px 0 32px 32px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  h1 {
+    padding-bottom: 16px;
+  }
 }
