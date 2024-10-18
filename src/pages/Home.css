@@ -1,9 +1,10 @@
+.home {
+  padding-bottom: 128px;
+}
+
 .home-description {
-  top: 0;
-  z-index: 1;
   padding: 64px;
   font-size: 18px;
-  background-color: #e6e6fa;
 }
 
 .home-content {
@@ -21,6 +22,45 @@
 .home-first {
   font-size: 48px;
   font-weight: 800;
+}
+
+.home-section {
+  height: 30vh;
+  display: flex;
+}
+
+.home-text-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e6e6fa;
+  padding-inline: 32px;
+}
+
+.home-image-container img {
+  height: 30vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.home-image-container {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 32px;
+  background-color: #e6e6fa;
+}
+
+.home-contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+.home-contact-button {
+  margin-block: 32px 16px;
 }
 
 @media (max-width: 950px) {
