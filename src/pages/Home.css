@@ -7,7 +7,7 @@
 }
 
 .home-content {
-  width: 50%;
+  width: 40%;
 }
 .home-content p:last-child {
   margin-bottom: 32px;
@@ -19,11 +19,22 @@
 }
 
 .home-first {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 800;
 }
 
+@media (max-width: 950px) {
+  .home-content {
+    width: 70%;
+  }
+}
+
 @media (max-width: 768px) {
+  .home-first {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
   .home-description {
     padding: 32px;
   }
