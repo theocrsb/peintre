@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import IMAGES from "../data/images";
 import "./Home.css";
 
 const Home = () => {
   const images = IMAGES;
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <main className="home">
       <section className="home-description">
@@ -21,44 +28,48 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="home-section">
-        <div className="home-text-container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-            quisquam cupiditate fugit molestias alias fugiat totam possimus
-            vitae sunt, assumenda aliquid voluptates voluptatibus rerum
-            molestiae vero debitis odit, reprehenderit repellat?
-          </p>
-        </div>
-        <div className="home-image-container">
-          <img src={images[3].src} alt={`Artwork ${images[3].id + 1}`} />
-        </div>
-      </section>
-      <section className="home-section">
-        <div className="home-image-container">
-          {" "}
-          <img src={images[9].src} alt={`Artwork ${images[9].id + 1}`} />
-        </div>
-        <div className="home-text-container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          beatae, animi nesciunt hic magnam fugiat. Ab facere maiores,
-          repellendus ea id voluptatibus nesciunt qui hic maxime officiis
-          beatae, quo ex.
-        </div>
-      </section>
-      <section className="home-section">
-        <div className="home-text-container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid
-          vel optio laudantium inventore, iure quaerat beatae non excepturi
-          deserunt voluptate debitis quis consectetur quos maxime blanditiis
-          perspiciatis. Aliquam, iste.
-        </div>
-        <div className="home-image-container">
-          <img src={images[2].src} alt={`Artwork ${images[2].id + 1}`} />
-        </div>
-      </section>
+      <div className="home-section-container">
+        <section className="home-section">
+          <div className="home-text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              quisquam cupiditate fugit molestias alias fugiat totam possimus
+              vitae sunt, assumenda aliquid voluptates voluptatibus rerum
+              molestiae vero debitis odit, reprehenderit repellat?
+            </p>
+          </div>
+          <div className="home-image-container">
+            <img src={images[3].src} alt={`Artwork ${images[3].id + 1}`} />
+          </div>
+        </section>
+        <section className="home-section">
+          <div className="home-image-container">
+            {" "}
+            <img src={images[9].src} alt={`Artwork ${images[9].id + 1}`} />
+          </div>
+          <div className="home-text-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            beatae, animi nesciunt hic magnam fugiat. Ab facere maiores,
+            repellendus ea id voluptatibus nesciunt qui hic maxime officiis
+            beatae, quo ex.
+          </div>
+        </section>
+        <section className="home-section">
+          <div className="home-text-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid
+            vel optio laudantium inventore, iure quaerat beatae non excepturi
+            deserunt voluptate debitis quis consectetur quos maxime blanditiis
+            perspiciatis. Aliquam, iste.
+          </div>
+          <div className="home-image-container">
+            <img src={images[2].src} alt={`Artwork ${images[2].id + 1}`} />
+          </div>
+        </section>
+      </div>
       <section className="home-contact-section">
-        <button className="home-contact-button">Contactez-nous</button>
+        <button onClick={goToContact} className="home-contact-button">
+          Contactez-moi
+        </button>
       </section>
     </main>
   );

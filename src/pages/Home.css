@@ -24,6 +24,10 @@
   font-weight: 800;
 }
 
+.home-section-container {
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .home-section {
   height: 30vh;
   display: flex;
@@ -85,5 +89,39 @@
 
   .home-content p:last-child {
     margin-bottom: 0;
+  }
+
+  .home-image-container {
+    padding: 0;
+  }
+
+  .home-text-container {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-description {
+    padding-bottom: 64px;
+  }
+
+  .home-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-text-container {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .home-image-container {
+    padding: 0;
+  }
+
+  .home-image-container img {
+    height: auto;
+    width: 100%;
   }
 }
