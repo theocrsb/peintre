@@ -38,7 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #e6e6fa;
+  background-color: #8da399;
+  color: #fff;
   padding-inline: 32px;
 }
 
@@ -55,7 +56,7 @@
   align-items: center;
   justify-content: center;
   padding-inline: 32px;
-  background-color: #e6e6fa;
+  background-color: #8da399;
 }
 
 .home-contact-section {
