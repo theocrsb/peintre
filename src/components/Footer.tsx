@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Painter. Tous droits réservés.</p>
+      <p>© {new Date().getFullYear()} HAJAR DECORS. Tous droits réservés.</p>
       <div className="footer__social">
         <a
           href="https://facebook.com"
