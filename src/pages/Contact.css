@@ -1,3 +1,7 @@
+.contact {
+  min-height: 90vh;
+}
+
 .contact-info {
   padding: 32px;
 }
@@ -67,10 +71,6 @@ contact-one {
 }
 
 @media (max-width: 768px) {
-  .contact-form {
-    padding-bottom: 128px;
-  }
-
   .contact-wrapper {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import "./Contact.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -28,63 +29,66 @@ const Contact = () => {
   };
 
   return (
-    <main className="contact">
-      <h1>Contactez-moi</h1>
-      <div className="contact-info contact-wrapper">
-        <div className="contact-one">
-          <p>
-            <a href="mailto:painter-site@yopmail.com">
-              painter-site@yopmail.com
-            </a>
-          </p>
-          <p>
-            <a href="tel:+33707070707">07 07 07 07 07</a>
-          </p>
-          <span>8h - 18h</span>
+    <>
+      <main className="contact">
+        <h1>Contactez-moi</h1>
+        <div className="contact-info contact-wrapper">
+          <div className="contact-one">
+            <p>
+              <a href="mailto:painter-site@yopmail.com">
+                painter-site@yopmail.com
+              </a>
+            </p>
+            <p>
+              <a href="tel:+33707070707">07 07 07 07 07</a>
+            </p>
+            <span>8h - 18h</span>
+          </div>
+          <div className="contact-two">
+            <span>123 Rue Exemple</span>
+            <br />
+            <span>Paris et alentours</span>
+            <br />
+            <span>France</span>
+          </div>
         </div>
-        <div className="contact-two">
-          <span>123 Rue Exemple</span>
-          <br />
-          <span>Paris et alentours</span>
-          <br />
-          <span>France</span>
-        </div>
-      </div>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <label>
-          Nom :
-          <input
-            type="text"
-            name="nom"
-            value={formData.nom}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Email :
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Message :
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </label>
-        <button className="contact-button" type="submit">
-          Envoyer
-        </button>
-      </form>
-    </main>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <label>
+            Nom :
+            <input
+              type="text"
+              name="nom"
+              value={formData.nom}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            Email :
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            Message :
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </label>
+          <button className="contact-button" type="submit">
+            Envoyer
+          </button>
+        </form>
+      </main>
+      <Footer />
+    </>
   );
 };
 
