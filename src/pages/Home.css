@@ -2,6 +2,12 @@
   min-height: 90vh;
 }
 
+i {
+  font-weight: 400;
+  color: #6f6f6f;
+  font-size: 14px;
+}
+
 .home-description {
   padding: 64px;
   font-size: 18px;
@@ -9,9 +15,7 @@
 
 .home-content {
   width: 40%;
-}
-.home-content p:last-child {
-  margin-bottom: 32px;
+  margin-block: 32px;
 }
 
 .home-image {

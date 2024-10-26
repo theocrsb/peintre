@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:painter-site@yopmail.com?subject=Message de ${
+    const mailtoLink = `mailto:hajardecors1@gmail.com"?subject=Message de ${
       formData.nom
     }&body=Nom: ${formData.nom}%0AEmail: ${
       formData.email
@@ -35,17 +35,15 @@ const Contact = () => {
         <div className="contact-info contact-wrapper">
           <div className="contact-one">
             <p>
-              <a href="mailto:painter-site@yopmail.com">
-                painter-site@yopmail.com
-              </a>
+              <a href="mailto:hajardecors1@gmail.com">hajardecors1@gmail.com</a>
             </p>
             <p>
-              <a href="tel:+33707070707">07 07 07 07 07</a>
+              <a href="tel:+33620993533">06 20 99 35 33</a>
             </p>
             <span>8h - 18h</span>
           </div>
           <div className="contact-two">
-            <span>123 Rue Exemple</span>
+            <span>5 rue de Lesseps 75020 Paris</span>
             <br />
             <span>Paris et alentours</span>
             <br />

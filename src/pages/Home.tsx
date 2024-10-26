@@ -15,11 +15,12 @@ const Home = () => {
     <>
       <main className="home">
         <section className="home-description">
-          <p className="home-first">Professionnel en peinture et rénovation</p>
+          <p className="home-first">Travaux de peinture</p>
+          <i>Peintre depuis 2005</i>
           <br />
           <div className="home-content">
             <p>
-              Avec plus de 10 ans d'expérience dans la transformation
+              Avec près de 20 ans d'expérience dans la transformation
               d'intérieurs et d'extérieurs.
             </p>
             <br />
