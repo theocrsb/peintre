@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -12,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/public/favicon.ico" alt="logo" loading="lazy" />
-        <Link style={{ paddingLeft: "16px" }} to="/">
+        <img src={logo} alt="logo" loading="lazy" />
+        <Link style={{ paddingLeft: "32px" }} to="/">
           HAJAR DECORS
         </Link>
       </div>

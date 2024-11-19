@@ -41,8 +41,8 @@
 
 .navbar-logo img {
   position: absolute;
-  bottom: 4px;
-  width: 20px;
+  bottom: 0;
+  width: 32px;
 }
 
 @media (max-width: 768px) {
