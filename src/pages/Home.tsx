@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import IMAGES from "../data/images";
 import "./Home.css";
 import Footer from "../components/Footer";
+import Caroussel from "../components/Caroussel";
 
 const Home = () => {
   const images = IMAGES;
@@ -31,6 +32,7 @@ const Home = () => {
             </p>
           </div>
         </section>
+        <Caroussel />
         <div className="home-section-container">
           <section className="home-section">
             <div className="home-text-container">
