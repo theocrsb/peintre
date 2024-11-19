@@ -26,6 +26,9 @@ i {
 .home-first {
   font-size: 48px;
   font-weight: 800;
+  text-align: center;
+  padding-inline: 0;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .home-section-container {

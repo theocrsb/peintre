@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <main className="home">
+        <h1 className="home-first">HAJAR DECORS</h1>
         <section className="home-description">
-          <p className="home-first">Travaux de peinture</p>
           <i>Peintre depuis 2005</i>
           <br />
           <div className="home-content">
