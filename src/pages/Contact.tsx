@@ -1,33 +1,7 @@
 import Footer from "../components/Footer";
 import "./Contact.css";
-import { ChangeEvent, FormEvent, useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    nom: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // TODO: use real mail address and delete yopmail adress
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-
-    const mailtoLink = `mailto:hajardecors1@gmail.com"?subject=Message de ${
-      formData.nom
-    }&body=Nom: ${formData.nom}%0AEmail: ${
-      formData.email
-    }%0AMessage: ${encodeURIComponent(formData.message)}`;
-
-    window.location.href = mailtoLink;
-  };
-
   return (
     <>
       <main className="contact">
@@ -50,40 +24,6 @@ const Contact = () => {
             <span>France</span>
           </div>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label>
-            Nom :
-            <input
-              type="text"
-              name="nom"
-              value={formData.nom}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <label>
-            Email :
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <label>
-            Message :
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </label>
-          <button className="contact-button" type="submit">
-            Envoyer
-          </button>
-        </form>
       </main>
       <Footer />
     </>

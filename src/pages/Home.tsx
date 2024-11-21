@@ -17,8 +17,6 @@ const Home = () => {
       <main className="home">
         <h1 className="home-first">HAJAR DECORS</h1>
         <section className="home-description">
-          <i>Peintre depuis 2005</i>
-          <br />
           <div className="home-content">
             <p>
               Avec près de 20 ans d'expérience dans la transformation

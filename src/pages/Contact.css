@@ -1,9 +1,12 @@
 .contact {
-  min-height: 90vh;
+  min-height: calc(100vh - 64px);
 }
 
 .contact-info {
-  padding: 32px;
+  padding: 64px;
+  background-color: #8da399;
+  color: white;
+  font-size: 18px;
 }
 
 span {
@@ -15,9 +18,11 @@ span {
   grid-template-columns: repeat(2, minmax(300px, 30%));
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  margin-top: 64px;
+  line-height: 64px;
 }
 
-contact-one {
+.contact-one {
   grid-column: 1;
   grid-row: 1;
 }
@@ -25,37 +30,6 @@ contact-one {
 .contact-two {
   grid-column: 2;
   grid-row: 1;
-}
-
-.contact-form {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background-color: #8da399;
-  color: white;
-  margin-inline: 32px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset,
-    0px 4px 7px -3px rgba(215, 255, 252, 0.17), 0px 2px 4px rgba(0, 0, 0, 0.22);
-}
-
-.contact-form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-button {
-  margin: 0 auto;
-  color: white;
 }
 
 @media (max-width: 950px) {
@@ -74,11 +48,16 @@ contact-one {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
   }
 
   .contact-one,
-  .contact-two,
-  .contact-three {
+  .contact-two {
     padding-left: 16px;
+    margin-block: 16px;
+  }
+
+  .contact-info {
+    padding: 32px;
   }
 }

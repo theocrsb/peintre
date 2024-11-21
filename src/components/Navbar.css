@@ -58,4 +58,14 @@
   .navbar-links {
     padding-inline: 16px;
   }
+
+  .custom-select select {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar li a {
+    margin: 8px;
+  }
 }
