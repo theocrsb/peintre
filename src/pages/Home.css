@@ -2,14 +2,8 @@
   min-height: calc(100vh - 64px);
 }
 
-i {
-  font-weight: 400;
-  color: #6f6f6f;
-  font-size: 14px;
-}
-
 .home-description {
-  padding: 48px;
+  padding: 0 48px 48px;
   font-size: 18px;
 }
 
@@ -21,15 +15,6 @@ i {
 .home-image {
   width: 100%;
   height: auto;
-}
-
-.home-first {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  padding-inline: 0;
-  color: #75574b;
-  text-shadow: 1px 1px 1px rgb(100, 100, 100);
 }
 
 .home-section-container {
@@ -84,11 +69,6 @@ i {
 }
 
 @media (max-width: 768px) {
-  .home-first {
-    font-size: 32px;
-    font-weight: 800;
-  }
-
   .home-description {
     padding: 32px;
   }

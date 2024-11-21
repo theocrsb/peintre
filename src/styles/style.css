@@ -21,7 +21,6 @@ html {
 a {
   text-decoration: none;
   color: #75574b;
-  margin: 16px;
 }
 
 a:hover {
@@ -47,7 +46,7 @@ button:hover {
 }
 
 h1 {
-  padding: 96px 0 32px 32px;
+  padding: 128px 0 32px 32px;
 }
 
 /* Responsive Design */

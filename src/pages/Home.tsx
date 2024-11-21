@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <main className="home">
-        <h1 className="home-first">HAJAR DECORS</h1>
+        <h1>Accueil</h1>
         <section className="home-description">
           <div className="home-content">
             <p>
