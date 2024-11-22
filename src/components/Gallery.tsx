@@ -2,7 +2,6 @@ import "./Gallery.css";
 import IMAGES, { Destination } from "../data/images";
 
 const Gallery = () => {
-  console.log(IMAGES);
   return (
     <div className="gallery">
       {IMAGES.filter((img) => img.destination === Destination.galerie).map(

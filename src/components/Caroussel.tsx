@@ -4,7 +4,6 @@ import IMAGES, { Destination } from "../data/images";
 import { Navigation } from "swiper/modules";
 
 const Caroussel = () => {
-  console.log(IMAGES);
   return (
     <Swiper
       spaceBetween={50}
