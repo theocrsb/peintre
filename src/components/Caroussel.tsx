@@ -24,24 +24,11 @@ const Caroussel = () => {
                 position: "relative",
               }}
             >
-              {/* Texte */}
-              <span
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "50%",
-                  transform: "translate(50%,-50%)",
-                  margin: "0",
-                  fontSize: "64px",
-                  color: "black",
-                  zIndex: 2,
-                }}
-              >
-                {title}
-              </span>
+              <span className="img-title-caroussel">{title}</span>
 
               <img
                 src={src}
+                className="shadow-lg"
                 alt={`Artwork ${id + 1}`}
                 height={600}
                 width={"80%"}

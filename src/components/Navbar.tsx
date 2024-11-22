@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-secondary"
+      className="shadow navbar navbar-expand-lg bg-body-secondary"
       style={{
         position: "fixed",
         top: "0",

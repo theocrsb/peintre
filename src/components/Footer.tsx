@@ -1,12 +1,13 @@
-import "./Footer.css";
-
 const Footer = () => {
   return (
-    <footer className="bg-body-secondary text-center text-lg-start">
+    <footer
+      className="bg-body-secondary text-center"
+      style={{ height: "13vh" }}
+    >
       <div className="text-center p-3">
         <p>© {new Date().getFullYear()} HAJAR DECORS. Tous droits réservés.</p>
         <a
-          className="text-body"
+          className="text-body mx-2"
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,7 +15,7 @@ const Footer = () => {
           Instagram
         </a>
         <a
-          href="https://facebook.com"
+          href="https://facebook.com mx-2"
           target="_blank"
           rel="noopener noreferrer"
           className="text-body"

@@ -1,5 +1,5 @@
 .home {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 13vh);
 }
 
 .home-description {
@@ -8,17 +8,17 @@
 }
 
 .home-content {
-  width: 40%;
+  width: 100%;
   margin-block: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .home-image {
   width: 100%;
   height: auto;
-}
-
-.home-section-container {
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .home-section {

@@ -18,40 +18,37 @@ html {
   background-color: #f4f4f4;
 }
 
-a {
-  text-decoration: none;
-  color: #75574b;
-}
-
 a:hover {
   color: #000;
   text-decoration: underline;
-}
-
-button {
-  padding: 8px 16px;
-  border: 1px solid #75574b;
-  background-color: #c2c2c200;
-  color: #75574b;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  width: 200px;
-}
-
-button:hover {
-  background-color: #75574b;
-  color: #f4f4f4;
 }
 
 h1 {
   padding: 128px 0 32px 32px;
 }
 
+.home-spacing {
+  padding: 112px 0 32px 32px;
+}
+
+.img-title-caroussel {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  margin: 0;
+  font-size: 64px;
+  color: "black";
+  z-index: 2;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
     padding-bottom: 16px;
+  }
+
+  .img-title-caroussel {
+    font-size: 32px;
   }
 }

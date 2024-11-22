@@ -15,8 +15,9 @@ const Home = () => {
   return (
     <>
       <main className="home">
-        <h1>Accueil</h1>
+        <div className="home-spacing" />
         <section className="home-description">
+          <Caroussel />
           <div className="home-content">
             <p>
               Avec près de 20 ans d'expérience dans la transformation
@@ -28,10 +29,17 @@ const Home = () => {
               espaces grâce à des techniques de peinture innovantes et des
               finitions impeccables.
             </p>
+            <button
+              onClick={goToContact}
+              type="button"
+              className="shadow btn btn-secondary mt-4"
+              style={{ width: "fit-content", margin: "auto" }}
+            >
+              Contactez-moi
+            </button>
           </div>
         </section>
-        <Caroussel />
-        <div className="home-section-container">
+        <div className="shadow">
           <section className="home-section">
             <div className="home-text-container">
               <p>
@@ -70,7 +78,11 @@ const Home = () => {
           </section>
         </div>
         <section className="home-contact-section">
-          <button onClick={goToContact} className="home-contact-button">
+          <button
+            onClick={goToContact}
+            type="button"
+            className="shadow btn btn-secondary mt-4"
+          >
             Contactez-moi
           </button>
         </section>
