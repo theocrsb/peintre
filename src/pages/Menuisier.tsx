@@ -58,7 +58,7 @@ const Menuisier = () => {
 
                     <img
                       src={src}
-                      className="shadow-lg"
+                      className="shadow-lg responsive-swiper"
                       alt={`Artwork ${id + 1}`}
                       height={600}
                       width={"80%"}
