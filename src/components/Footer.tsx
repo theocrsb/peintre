@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer
@@ -6,22 +8,9 @@ const Footer = () => {
     >
       <div className="text-center p-3">
         <p>© {new Date().getFullYear()} HAJAR DECORS. Tous droits réservés.</p>
-        <a
-          className="text-body mx-2"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://facebook.com mx-2"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-body"
-        >
-          Facebook
-        </a>
+        <Link className="nav-link" to="/contact">
+          Contact
+        </Link>
       </div>
     </footer>
   );
