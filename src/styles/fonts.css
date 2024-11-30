@@ -1,95 +1,95 @@
-/* Roboto Regular */
+/* Nunito Regular */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Regular.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-/* Roboto Italic */
+/* Nunito Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Italic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
-/* Roboto Thin */
+/* Nunito Thin */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Thin.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
-/* Roboto Thin Italic */
+/* Nunito Thin Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-ThinItalic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
 }
 
-/* Roboto Light */
+/* Nunito Light */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Light.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
-/* Roboto Light Italic */
+/* Nunito Light Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-LightItalic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
-/* Roboto Medium */
+/* Nunito Medium */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Medium.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
-/* Roboto Medium Italic */
+/* Nunito Medium Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-MediumItalic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
-/* Roboto Bold */
+/* Nunito Bold */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Bold.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
-/* Roboto Bold Italic */
+/* Nunito Bold Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-BoldItalic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
-/* Roboto Black */
+/* Nunito Black */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-Black.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
-/* Roboto Black Italic */
+/* Nunito Black Italic */
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/font/Roboto-BlackItalic.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("./assets/font/Nunito-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
