@@ -1,4 +1,11 @@
-@import "./fonts.css";
+@import "@fontsource/nunito/200";
+@import "@fontsource/nunito/300";
+@import "@fontsource/nunito/400";
+@import "@fontsource/nunito/500";
+@import "@fontsource/nunito/600";
+@import "@fontsource/nunito/700";
+@import "@fontsource/nunito/800";
+@import "@fontsource/nunito/900";
 
 /* globals.css */
 
@@ -10,8 +17,7 @@
 
 body,
 html {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
+  font-family: "Nunito";
   line-height: 1.6;
   color: #000;
   background-color: #f4f4f4;
